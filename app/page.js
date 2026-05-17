@@ -45,13 +45,7 @@ function Nav() {
       <div className="nav-brand">
         <a href="#" className="nav-logo"><img src="/temitea.png" alt="Temi Tea — The Taste of a Distant Saga" /></a>
       </div>
-      <div className="nav-links">
-        <a href="#provenance">Provenance</a>
-        <a href="#story">Our Story</a>
-        <a href="#tasting">Tasting Notes</a>
-        <a href="#brew">Brew Guide</a>
-      </div>
-      <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="nav-cta">Order Special</a>
+      <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="nav-cta btn-loud" style={{padding: '10px 18px', fontSize: '11px', fontWeight: 600}}>BUY NOW</a>
     </nav>
   );
 }
@@ -99,11 +93,10 @@ function Hero({ titleA = 'The Taste of', titleEm = 'Distant', showRing = true, s
             At 5,500 feet in the mist-draped Himalayas of Sikkim, India's most geographically protected estate tea is hand-plucked, chemical-free since 2008. Every cup carries the heritage of the last Himalayan kingdom.
           </p>
           <div className="hero-actions reveal d3">
-            <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="btn btn-primary">
-              Order Temi Special
+            <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="btn btn-primary btn-loud">
+              BUY NOW
               <span className="arrow">→</span>
             </a>
-            <a href="#provenance" className="btn btn-ghost">Visit the Estate</a>
           </div>
         </div>
 
@@ -203,7 +196,7 @@ function Provenance() {
         <div className="section-head reveal">
           <div>
             <div className="eyebrow-row">
-              <span className="num">01 / 06</span>
+              <span className="num">03 / 03</span>
               <span className="line"></span>
               <span className="eyebrow">Origin & Terroir</span>
             </div>
@@ -254,6 +247,9 @@ function Provenance() {
             <div className="cell"><div className="label">Grade</div><div className="value" style={{fontSize:'20px'}}><em>Fine</em> Whole Leaf</div></div>
           </div>
         </div>
+        <div className="micro-cta-container reveal d3">
+          <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="micro-cta">BUY NOW →</a>
+        </div>
       </div>
     </section>
   );
@@ -285,7 +281,7 @@ function Features() {
         <div className="section-head reveal">
           <div>
             <div className="eyebrow-row">
-              <span className="num">02 / 06</span>
+              <span className="num">01 / 03</span>
               <span className="line"></span>
               <span className="eyebrow">The Tea Itself</span>
             </div>
@@ -351,6 +347,9 @@ function Features() {
             </button>
           </div>
         )}
+        <div className="micro-cta-container reveal d3" style={!expanded ? {paddingTop: 0} : {}}>
+          <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="micro-cta">BUY NOW →</a>
+        </div>
       </div>
     </section>
   );
@@ -424,7 +423,7 @@ function Certifications() {
         <div className="section-head reveal">
           <div>
             <div className="eyebrow-row">
-              <span className="num">03 / 06</span>
+              <span className="num">02 / 03</span>
               <span className="line"></span>
               <span className="eyebrow">Certified Integrity</span>
             </div>
@@ -448,219 +447,15 @@ function Certifications() {
             </div>
           ))}
         </div>
-      </div>
-    </section>
-  );
-}
-
-// ============ Our Story / Timeline ============
-function Story() {
-  const events = [
-    { year: '1969', title: 'Foundation', desc: 'The Temi Tea Estate is established by the Kingdom of Sikkim. 440 acres of Himalayan slopes are cultivated for the first time.' },
-    { year: '1975', title: 'Integration', desc: 'Sikkim joins India. The estate passes to the Government of Sikkim, preserving its heritage and quality mandate.' },
-    { year: '2008', title: 'Organic Certification', desc: 'USDA, JAS, and Lacon certifications awarded. Chemical use permanently ended across the estate.' },
-    { year: '2016', title: 'Sikkim Goes Organic', desc: 'Sikkim becomes India\'s first fully organic state. Temi becomes the jewel of the world\'s most protected growing region.' },
-    { year: '2024', title: 'A Kingdom\'s Gift, To the World', desc: 'Marketed across India and internationally by MRC Agrotech Limited (BSE: 540809), Mumbai.' },
-  ];
-  return (
-    <section id="story" className="story section-pad">
-      <div className="container">
-        <div className="section-head reveal">
-          <div>
-            <div className="eyebrow-row">
-              <span className="num">04 / 06</span>
-              <span className="line"></span>
-              <span className="eyebrow">Our Story</span>
-            </div>
-          </div>
-          <div>
-            <h2>A Kingdom's<br/>gift, to <em>the world.</em></h2>
-            <p className="lede" style={{ marginTop: 28 }}>
-              The story of Temi begins with a Himalayan king, four hundred and forty acres of loamy slope, and four seasons that nurtured a singular character.
-            </p>
-          </div>
-        </div>
-
-        <blockquote className="story-quote reveal">
-          Every sip whispers a story of Sikkim's history, landscape, and mysticism.
-          <span className="attr">— Temi Tea Estate</span>
-        </blockquote>
-
-        <div className="timeline">
-          {events.map((e) => (
-            <div className="tl-row reveal" key={e.year}>
-              <div className="tl-year">{e.year}</div>
-              <div><div className="tl-dot"></div></div>
-              <div className="tl-content">
-                <h4>{e.title}</h4>
-                <p>{e.desc}</p>
-              </div>
-            </div>
-          ))}
+        <div className="micro-cta-container reveal d3">
+          <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="micro-cta">BUY NOW →</a>
         </div>
       </div>
     </section>
   );
 }
 
-// ============ Tasting Notes ============
-function Tasting() {
-  const flavors = [
-    { label: 'Body', value: 'Medium-Light', w: 45 },
-    { label: 'Astringency', value: 'Gentle', w: 32 },
-    { label: 'Aroma', value: 'Pronounced', w: 82 },
-    { label: 'Fruity Notes', value: 'Distinct', w: 76 },
-    { label: 'Finish', value: 'Long & Clean', w: 88 },
-    { label: 'Mineral Note', value: 'Slate-Soft', w: 58 },
-  ];
-  return (
-    <section id="tasting" className="tasting section-pad">
-      <div className="container">
-        <div className="tasting-grid">
-          <div className="reveal">
-            <div className="eyebrow-row" style={{ display:'flex', alignItems:'center', gap:14, marginBottom: 28 }}>
-              <span className="num" style={{ fontFamily:'JetBrains Mono, monospace', fontSize:11, color:'var(--saffron)', letterSpacing:'0.18em' }}>05 / 06</span>
-              <span className="line" style={{ flex:1, height:1, background:'rgba(249, 241, 222, 0.2)', maxWidth:80 }}></span>
-              <span className="eyebrow">Sensory Profile</span>
-            </div>
-            <h2>Copper-gold<br/>in the cup, <em>quietly</em><br/>complex on<br/>the tongue.</h2>
-            <p className="tasting-intro">
-              A luminous copper-gold liquor — bright, clear, entirely natural. Light-to-medium bodied with a faint muscatel character of high-altitude black tea. Long, clean finish; a quiet mineral note from the slate-rich Sikkim soils lingers.
-            </p>
-            <div className="flavor-list">
-              {flavors.map((f) => (
-                <div className="flavor" key={f.label} style={{ '--w': f.w + '%' }}>
-                  <div className="flavor-label">{f.label}</div>
-                  <div className="flavor-bar"></div>
-                  <div className="flavor-value">{f.value}</div>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          <div className="reveal d2">
-            <div className="liquor-study">
-              <div className="liquor-disc" aria-hidden="true">
-                <div className="liquor-disc-inner"></div>
-                <div className="liquor-disc-label">
-                  <div className="liquor-disc-eyebrow">Liquor</div>
-                  <div className="liquor-disc-name">Copper-gold</div>
-                  <div className="liquor-disc-hex">#C87A35</div>
-                </div>
-              </div>
-
-              <div className="steep-flight">
-                <div className="steep-flight-head">
-                  <span className="eyebrow" style={{ color:'var(--saffron)' }}>Steeping Flight</span>
-                  <span style={{ fontFamily:'JetBrains Mono, monospace', fontSize:10, letterSpacing:'0.15em', color:'rgba(249,241,222,0.5)', textTransform:'uppercase' }}>1 → 4 min</span>
-                </div>
-                <div className="steep-row">
-                  <div className="steep-chip" style={{ background:'linear-gradient(180deg, #ecc06a, #d59a3e)' }}></div>
-                  <div className="steep-chip" style={{ background:'linear-gradient(180deg, #d59a3e, #b76e2e)' }}></div>
-                  <div className="steep-chip" style={{ background:'linear-gradient(180deg, #b76e2e, #7a3a14)' }}></div>
-                </div>
-                <div className="steep-row-labels">
-                  <div>
-                    <div className="steep-time">1 min</div>
-                    <div className="steep-desc">Floral, bright amber</div>
-                  </div>
-                  <div>
-                    <div className="steep-time">2.5 min</div>
-                    <div className="steep-desc">Copper, balanced</div>
-                  </div>
-                  <div>
-                    <div className="steep-time">4 min</div>
-                    <div className="steep-desc">Deep tangerine</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-// ============ Brew Guide ============
-function Brew() {
-  const [progress, setProgress] = useState(0);
-  const scrollRef = useRef(null);
-
-  const handleScroll = () => {
-    if (!scrollRef.current) return;
-    const el = scrollRef.current;
-    const scrollLeft = el.scrollLeft;
-    const maxScroll = el.scrollWidth - el.clientWidth;
-    if (maxScroll > 0) {
-      setProgress((scrollLeft / maxScroll) * 100);
-    }
-  };
-
-  const steps = [
-    {
-      n: '01', title: 'Measure', em: 'the Leaf', meta: '2 – 2.5 g / cup',
-      body: 'One heaped teaspoon (2–2.5g) of loose-leaf per 200ml of water. For fuller body, increase to 3g.',
-      icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M8 18c0-4 4-7 8-7s8 3 8 7-4 5-8 5-8-1-8-5Z"/><path d="M12 8s2-3 4-3 4 3 4 3"/></svg>
-    },
-    {
-      n: '02', title: 'Water', em: 'Temperature', meta: '90 – 95° C',
-      body: 'Bring fresh filtered water to 90–95°C. Avoid a full rolling boil — excessive heat destroys the delicate aromatics.',
-      icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M16 4v14"/><circle cx="16" cy="22" r="6"/><path d="M14 4h4"/></svg>
-    },
-    {
-      n: '03', title: 'Steep', em: 'Patiently', meta: '2.5 – 3.5 min',
-      body: 'Steep for 2.5 to 3.5 minutes. Shorter steeping yields floral brightness; longer deepens body. Remove leaves promptly.',
-      icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3"><circle cx="16" cy="16" r="12"/><path d="M16 8v8l5 3"/></svg>
-    },
-    {
-      n: '04', title: 'Serve &', em: 'Savour', meta: 'Best served plain',
-      body: 'Serve plain in a clear cup to appreciate the copper-gold colour. Milk and sugar mask the character of this extraordinary leaf.',
-      icon: <svg width="32" height="32" viewBox="0 0 32 32" fill="none" stroke="currentColor" strokeWidth="1.3"><path d="M7 14h16v5a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6Z"/><path d="M23 16h2a3 3 0 0 1 0 6h-2"/><path d="M12 9s1-2 0-4M16 9s1-2 0-4M20 9s1-2 0-4"/></svg>
-    },
-  ];
-  return (
-    <section id="brew" className="brew section-pad">
-      <div className="container">
-        <div className="section-head reveal">
-          <div>
-            <div className="eyebrow-row">
-              <span className="num">06 / 06</span>
-              <span className="line"></span>
-              <span className="eyebrow">Ritual of the Cup</span>
-            </div>
-          </div>
-          <div>
-            <h2>How to brew<br/>Temi Tea <em>Special.</em></h2>
-            <p className="lede" style={{ marginTop: 28 }}>
-              A whole-leaf tea rewards patience. Four steps, four minutes, one quietly extraordinary cup.
-            </p>
-          </div>
-        </div>
-        <div className="brew-steps" ref={scrollRef} onScroll={handleScroll}>
-          {steps.map((s, i) => (
-            <div className="step reveal" key={s.n} style={{ transitionDelay: `${i * 90}ms` }}>
-              <div className="step-num">— {s.n}</div>
-              <div className="step-glyph">{s.icon}</div>
-              <h4>{s.title} <em>{s.em}</em></h4>
-              <div className="step-meta">{s.meta}</div>
-              <p>{s.body}</p>
-            </div>
-          ))}
-        </div>
-        <div className="brew-indicator">
-          <div className="brew-progress">
-            <div className="brew-progress-inner" style={{ transform: `scaleX(${progress / 100})` }}></div>
-          </div>
-          <div className="brew-hint">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-            Swipe to explore
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 // ============ CTA ============
 function CTA() {
@@ -679,12 +474,12 @@ function CTA() {
           <p>
             Available online from the estate, and across premium retail in India. For corporate gifting and bulk enquiries, contact MRC Agrotech directly.
           </p>
-          <div className="cta-actions">
-            <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="btn btn-primary">
-              Buy at temiteaestate.com
+          <div className="cta-actions" style={{flexDirection: 'column', alignItems: 'flex-start', gap: '16px'}}>
+            <a href="https://temiteaestate.com/products/temiteaspecial-nat" target="_blank" rel="noopener" className="btn btn-primary btn-loud">
+              BUY NOW
               <span className="arrow">→</span>
             </a>
-            <a href="#" className="btn btn-ghost">Corporate &amp; Gifting</a>
+            <a href="#" className="text-link-small" style={{marginLeft: '16px'}}>Corporate &amp; Gifting →</a>
           </div>
           
         </div>
@@ -715,46 +510,49 @@ function Footer() {
       <div className="container">
         <div className="foot-grid">
           <div className="foot-brand">
-            <a href="#" className="foot-logo"><img src="/temitea.png" alt="Temi Tea" /></a>
-            <p>India's only certified organic Himalayan estate tea, grown at 5,500 feet in Sikkim since 1969.</p>
-            <div className="foot-seal">
-              <img src="/images/sikkim-organic-badge.png" alt="Sikkim Tea Organic Certified" />
-              <div>
-                <div className="foot-seal-title">Sikkim Tea</div>
-                <div className="foot-seal-sub">Organic · Trademark of the Estate</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <h5>Products</h5>
-            <ul>
-              <li><a href="#">Temi Special · 100g</a></li>
-              <li><a href="#">Temi Classic · 100g</a></li>
-              <li><a href="#">Wooden Caddy · 200g</a></li>
-              <li><a href="#">Green Tea Caddy</a></li>
-              <li><a href="#">Corporate Gifting</a></li>
+            <a href="#" className="foot-logo" style={{ display: 'flex', alignItems: 'center', gap: 14, textDecoration: 'none', marginBottom: 16 }}>
+              <img src="/temitea.png" alt="Temi Tea Logo" style={{ height: 48, width: 'auto' }} />
+              <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 26, fontWeight: 700, color: 'var(--bg-cream)', letterSpacing: '0.02em' }}>Temi Tea Estate</span>
+            </a>
+            <p style={{ marginBottom: 24 }}>
+              India's only certified organic Himalayan estate tea, grown at 5,500 feet in Sikkim since 1969.
+            </p>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, padding: 0 }}>
+              <li style={{ fontSize: 14, color: 'rgba(249, 241, 222, 0.6)' }}>
+                <strong style={{ color: 'var(--saffron)' }}>Origin:</strong> South Sikkim, India
+              </li>
+              <li style={{ fontSize: 14, color: 'rgba(249, 241, 222, 0.6)' }}>
+                <strong style={{ color: 'var(--saffron)' }}>Elevation:</strong> 5,500 ft / 1,680 m
+              </li>
+              <li style={{ fontSize: 14, color: 'rgba(249, 241, 222, 0.6)' }}>
+                <strong style={{ color: 'var(--saffron)' }}>Estate Area:</strong> 440 Acres (100% Organic)
+              </li>
             </ul>
           </div>
-          <div>
-            <h5>About</h5>
-            <ul>
-              <li><a href="#provenance">The Estate</a></li>
-              <li><a href="#story">Our Story</a></li>
-              <li><a href="#">Certifications</a></li>
-              <li><a href="#">Sustainability</a></li>
-            </ul>
-          </div>
-          <div>
-            <h5>Marketed by</h5>
-            <a href="#" className="mrc-logo"><img src="/images/mrc-agrotech.png" alt="MRC Agrotech Ltd — Growing Together" /></a>
-            <ul style={{ marginTop: 16 }}>
-              <li>BSE: 540809</li>
-              <li>+91-22-40156765</li>
-              <li><a href="mailto:Info@mrcagro.com">Info@mrcagro.com</a></li>
+          
+          <div className="foot-mrc">
+            <h5>Marketed &amp; Distributed By</h5>
+            <a href="#" className="mrc-logo" style={{ display: 'flex', alignItems: 'center', gap: 14, textDecoration: 'none', marginBottom: 16 }}>
+              <img src="/images/mrc-agrotech.png" alt="MRC Agrotech Logo" style={{ height: 48, width: 'auto', background: 'rgba(249, 241, 222, 0.95)', padding: '6px 12px', borderRadius: 6 }} />
+              <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 22, fontWeight: 700, color: 'var(--bg-cream)', letterSpacing: '0.02em' }}>MRC Agrotech Limited</span>
+            </a>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontStyle: 'normal', fontSize: 20, color: 'rgba(249, 241, 222, 0.85)', margin: '12px 0 20px', lineHeight: '1.4' }}>
+              MRC Agrotech Limited is the official marketing partner carrying Sikkim's finest estate tea to global markets.
+            </p>
+            <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10, padding: 0 }}>
+              <li style={{ fontSize: 14, color: 'rgba(249, 241, 222, 0.6)' }}>
+                <strong style={{ color: 'var(--saffron)' }}>BSE Script:</strong> 540809 (Listed in Mumbai)
+              </li>
+              <li style={{ fontSize: 14, color: 'rgba(249, 241, 222, 0.6)' }}>
+                <strong style={{ color: 'var(--saffron)' }}>Corporate Tel:</strong> +91-22-40156765
+              </li>
+              <li style={{ fontSize: 14, color: 'rgba(249, 241, 222, 0.6)' }}>
+                <strong style={{ color: 'var(--saffron)' }}>Inquiries:</strong> <a href="mailto:Info@mrcagro.com" style={{ color: 'var(--saffron)' }}>Info@mrcagro.com</a>
+              </li>
             </ul>
           </div>
         </div>
-        <div className="foot-bottom">
+        <div className="foot-bottom" style={{ marginTop: 40 }}>
           <span>© 2025 MRC Agrotech Limited · Temi Tea · All rights reserved</span>
           <span>FSSAI Lic. 12324005000007 · temiteaestate.com</span>
         </div>
@@ -767,21 +565,42 @@ function Footer() {
 function App() {
   useReveal();
   useFlavorReveal();
+  const [hideSticky, setHideSticky] = useState(false);
+
+  useEffect(() => {
+    const ctaEl = document.getElementById('cta');
+    if (!ctaEl) return;
+    const obs = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) {
+        setHideSticky(true);
+      } else {
+        setHideSticky(false);
+      }
+    }, { threshold: 0.1 });
+    obs.observe(ctaEl);
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <>
       <Nav />
       <main>
         <Hero titleA="Temi Tea " titleEm="Special" showRing={true} showMarquee={true} />
         <Stats />
-        <Provenance />
         <Features />
         <Certifications />
-        <Story />
-        <Tasting />
-        <Brew />
+        <Provenance />
         <CTA />
       </main>
       <Footer />
+      <a 
+        href="https://temiteaestate.com/products/temiteaspecial-nat" 
+        target="_blank" 
+        rel="noopener" 
+        className={`sticky-mobile-cta ${hideSticky ? 'hidden' : ''}`}
+      >
+        BUY NOW
+      </a>
     </>
   );
 }
